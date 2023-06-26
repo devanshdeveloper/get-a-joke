@@ -20,7 +20,7 @@ body {
   border-radius: 8px;
   display: flex;
   width: min(700px, 90vw);
-  gap: 20px;
+  gap: 35px;
   flex-direction: column;
 }
 

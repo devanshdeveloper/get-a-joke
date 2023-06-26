@@ -12,9 +12,10 @@ async function getJoke() {
 }
 
 newBtn.addEventListener("click", async () => {
+  newBtn.innerHTML = "Loading...";
   const joke = await getJoke();
-  console.log(joke);
   jokeEl.innerHTML = (
     joke.type === "twopart" ? `${joke.setup}\n${joke.delivery}` : joke.joke
   ).replace("\n", "<br><br>");
+  newBtn.innerHTML = "Another Joke";
 });
